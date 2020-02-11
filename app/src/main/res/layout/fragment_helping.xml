@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout android:id="@+id/helping_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/sec_title"
+                android:name="com.adrianCzarnecki.anxietyApp.ui.secTitle.SecTitleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Paragraph 1 + image -->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tHave a look at the ImageView API. There are several setImage* methods. Which one to use depends on the image you provide. If you have the image as resource Have a look at the ImageView API. There are several setImage* methods."/>
+                <ImageView
+                    android:src="@drawable/helping"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 2 + image -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+            </LinearLayout><LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:textColor="#000000"
+                android:fontFamily="@font/lato_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

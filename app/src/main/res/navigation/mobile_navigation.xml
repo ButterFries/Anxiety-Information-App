@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_improving"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.improving.ImprovingFragment"
+        android:label="@string/menu_improving"
+        tools:layout="@layout/fragment_improving" />
+
+    <fragment
+        android:id="@+id/nav_helping"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.helping.HelpingFragment"
+        android:label="@string/menu_helping"
+        tools:layout="@layout/fragment_helping" />
+
+    <fragment
+        android:id="@+id/nav_effects"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.effects.EffectsFragment"
+        android:label="@string/menu_effects"
+        tools:layout="@layout/fragment_effects" />
+
+    <fragment
+        android:id="@+id/nav_stress"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.stress.StressFragment"
+        android:label="@string/menu_stress"
+        tools:layout="@layout/fragment_stress" />
+
+    <fragment
+        android:id="@+id/nav_relax"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.relax.RelaxFragment"
+        android:label="@string/menu_relax"
+        tools:layout="@layout/fragment_relax" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.adrianCzarnecki.anxietyApp.ui.about.AboutFragment"
+        tools:layout="@layout/fragment_about"
+        android:label="@string/menu_about"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+</navigation>
