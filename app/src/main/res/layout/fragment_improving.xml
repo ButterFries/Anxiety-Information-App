@@ -37,9 +37,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tAnxiety "/>
+                    android:text="\t\t\tAnxiety is one of the body's de-escalation mechanisms for dealing with danger and harm. Anxiety is an evolutionary adaptation used to influence one's actions towards less harm and danger."/>
                 <ImageView
-                    android:src="@drawable/improving"
+                    android:src="@drawable/what"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:scaleType="fitXY"
@@ -64,7 +64,67 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+                    android:text="\t\tAnxiety works in an immediate-return environment; one which it was originally designed for. An immediate-return environment is one commonly found with animals; you eat when you're hungry, sleep when tired, run when you see a predator. An animals actions result in clear immediate outcomes, and as such, if the stress source is relieved, anxiety ceases too."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 3 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tProblems arise with humans, which live in a delayed-return environment. Many of our choices will not impact us immediately; one can save money so we can later have money for retirement, or one can move countries so they'd have better job opportunities."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 4 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tFor the vast majority of evolutionary history and prehistoric times, humans and human ancestors lived in an immediate-return environment, and as such our evolutionary adaptations for stress are also adapted towards an immediate-return envornment."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 5 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tBecause of this mismatch, long-term stressers can result in chronic stress. Likewise, anxiety disorders can come unnecessary, misfired, or over-amplified anxiety triggers. This can give rise to many anxiety disorders such as PTSD, phobias, panic disorder, illness anxiety disorder (hypochondria), obsessive-compulsive Disorder (OCD), etc."/>
 
             </LinearLayout>
 
@@ -78,8 +138,47 @@
             android:gravity="right">
 
 
-        </LinearLayout>
+            </LinearLayout>
 
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tSources used:"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\thttps://jamesclear.com/evolution-of-anxiety\n\t\thttps://www.healthline.com/health/anxiety#causes"/>
+
+
+            </LinearLayout>
 
 
         </LinearLayout>

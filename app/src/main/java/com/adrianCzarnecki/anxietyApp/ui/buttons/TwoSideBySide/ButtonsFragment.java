@@ -78,17 +78,33 @@ public class ButtonsFragment extends Fragment {
         // EditText etFoo = (EditText) view.findViewById(R.id.etFoo);
     }
 
-    private void setupImage(ImageButtonSquare ibs) {
+    private void setupImage(ImageButtonSquare ib) {
 
-        if (ibs.getImage().equals("home/helping")) {
-            ibs.setDest("helpingPressed");
-            ibs.setImageResource(R.drawable.helping);
-            ibs.setContentDescription("Helping a Friend");
-        }
-        else if (ibs.getImage().equals("home/improving")) {
-            ibs.setDest("improvingPressed");
-            ibs.setImageResource(R.drawable.improving);
-            ibs.setContentDescription("Improving Your Mental Health");
+        switch (ib.getImage()) {
+            case "home/planet":
+                ib.setDest("helpingPressed");
+                ib.setImageResource(R.drawable.what);
+                return;
+
+            case "home/what":
+                ib.setDest("improvingPressed");
+                ib.setImageResource(R.drawable.planet);
+                return;
+
+            case "home/awareness":
+                ib.setDest("relaxPressed");
+                ib.setImageResource(R.drawable.awareness);
+                return;
+
+            case "home/effects":
+                ib.setDest("stressPressed");
+                ib.setImageResource(R.drawable.effects);
+                return;
+
+            case "home/mental":
+                ib.setDest("effectsPressed");
+                ib.setImageResource(R.drawable.mental);
+                return;
         }
 
     }

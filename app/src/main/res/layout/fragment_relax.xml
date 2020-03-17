@@ -4,16 +4,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_relax"
+    <ScrollView android:id="@+id/scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout android:id="@+id/relax_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/sec_title"
+                android:name="com.adrianCzarnecki.anxietyApp.ui.secTitle.SecTitleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Paragraph 1 + image -->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <ImageView
+                    android:src="@drawable/awareness"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:paddingLeft="17dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\t\tAwareness for anxiety and mental health in general would be most beneficial in Asian cultures, where mental illness is still widely seen as taboo."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 2 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tIndividuals often refuse to seek professional treatment, or let others know of their mental health problems due to the notion of honour in Asian culture. To admit to mental health issues would equate to the dishonouring of their family name, and thus many individuals suffer through mental illnesses to uphold their family’s honour."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 3 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tLikewise, mental health is often stigmatized in other cultures too; individuals suffering from anxiety related mental disorders are often seen as weak-willed and simply need to get over their fears. This can be seen with individuals with Social Anxiety Disorder being seen as just shy, awkward, and just needing to go outside more often."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tSources used:"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\thttps://www.huffpost.com/entry/societal-views-on-mental-_b_9488896"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

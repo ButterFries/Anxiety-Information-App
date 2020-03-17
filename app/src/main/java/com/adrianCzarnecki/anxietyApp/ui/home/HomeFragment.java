@@ -26,8 +26,11 @@ import static com.adrianCzarnecki.anxietyApp.MainActivity.resources;
 public class HomeFragment extends Fragment {
 
 
-    final String home_improving = "home/improving";
-    final String home_helping = "home/helping";
+    final String home_improving = "home/what";
+    final String home_helping = "home/planet";
+    final String home_relax = "home/awareness";
+    final String home_stress = "home/effects";
+    final String home_effects="home/mental";
 
     private TitleFragment title;
     private ButtonsFragmentThree button_top_obj;
@@ -59,8 +62,9 @@ public class HomeFragment extends Fragment {
         button_top_obj = new ButtonsFragmentThree();
 
         Bundle bundle1 = new Bundle();
-        bundle1.putString("img1", home_improving);
+        bundle1.putString("img1", home_relax);
         bundle1.putString("img2", home_helping);
+        bundle1.putString("img3", home_improving);
         bundle1.putInt("colorOnClick", 0x7F000000);
         button_top_obj.setArguments(bundle1);
 
@@ -70,8 +74,8 @@ public class HomeFragment extends Fragment {
         button_mid_obj = new ButtonsFragment();
 
         Bundle bundle2 = new Bundle();
-        bundle2.putString("img1", home_helping);
-        bundle2.putString("img2", home_improving);
+        bundle2.putString("img1", home_effects);
+        bundle2.putString("img2", home_stress);
         bundle2.putInt("colorOnClick", 0x7F000000);
         button_mid_obj.setArguments(bundle2);
 

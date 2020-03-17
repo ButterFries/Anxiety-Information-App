@@ -61,7 +61,7 @@ public class ButtonsFragmentThree extends Fragment {
                 setupImage(ibsUp);
                 ibsDown.setImage(bundle.getString("img2"));
                 setupImage(ibsDown);
-                ibr.setImage(bundle.getString("img2"));
+                ibr.setImage(bundle.getString("img3"));
                 setupImage(ibr);
 
                 ibsUp.setPressedColor(bundle.getInt("colorOnClick"));
@@ -88,15 +88,31 @@ public class ButtonsFragmentThree extends Fragment {
 
     private void setupImage(ImageButtonMain ib) {
 
-        if (ib.getImage().equals("home/helping")) {
-            ib.setDest("helpingPressed");
-            ib.setImageResource(R.drawable.helping);
-            ib.setContentDescription("Helping a Friend");
-        }
-        else if (ib.getImage().equals("home/improving")) {
-            ib.setDest("improvingPressed");
-            ib.setImageResource(R.drawable.improving);
-            ib.setContentDescription("Improving Your Mental Health");
+        switch (ib.getImage()) {
+            case "home/planet":
+                ib.setDest("helpingPressed");
+                ib.setImageResource(R.drawable.planet);
+                return;
+
+            case "home/what":
+                ib.setDest("improvingPressed");
+                ib.setImageResource(R.drawable.what);
+                return;
+
+            case "home/awareness":
+                ib.setDest("relaxPressed");
+                ib.setImageResource(R.drawable.awareness);
+                return;
+
+            case "home/effects":
+                ib.setDest("stressPressed");
+                ib.setImageResource(R.drawable.effects);
+                return;
+
+            case "home/mental":
+                ib.setDest("effectsPressed");
+                ib.setImageResource(R.drawable.mental);
+                return;
         }
 
     }

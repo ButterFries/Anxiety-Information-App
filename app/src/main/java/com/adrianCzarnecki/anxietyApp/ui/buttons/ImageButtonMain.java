@@ -98,6 +98,29 @@ public class ImageButtonMain extends ImageButton {
         try {
             NavController navController = Navigation.findNavController(a, R.id.nav_host_fragment);
 
+            switch (dest) {
+                case "helpingPressed":
+                    navController.navigate(R.id.nav_helping);
+                    return;
+
+                case "improvingPressed":
+                    navController.navigate(R.id.nav_improving);
+                    return;
+
+                case "relaxPressed":
+                    navController.navigate(R.id.nav_relax);
+                    return;
+
+                case "stressPressed":
+                    navController.navigate(R.id.nav_stress);
+                    return;
+
+                case "effectsPressed":
+                    navController.navigate(R.id.nav_effects);
+                    return;
+            }
+
+
             if (dest.equals("improvingPressed")) {
                 Log.d("pressed", "improvingPressed :D");
                 // Loads a selected item from the toolbar

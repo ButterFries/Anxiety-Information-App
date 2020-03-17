@@ -5,6 +5,9 @@
     <color name="colorHeaderHome">#009BD3</color>
     <color name="colorHeaderHelping">#8319bd</color>
     <color name="colorHeaderImproving">#74c200</color>
+    <color name="colorHeaderStress">#ab0aaa</color>
+    <color name="colorHeaderEffects">#d4d200</color>
+    <color name="colorHeaderRelax">#14ccc0</color>
     <color name="colorTitle">#FFFFFF</color>
     <color name="colorShadow">#333333</color>
     <color name="colorText">#000000</color>

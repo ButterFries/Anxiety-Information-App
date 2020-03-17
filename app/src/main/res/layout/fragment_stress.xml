@@ -4,16 +4,290 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_stress"
+    <ScrollView android:id="@+id/scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout android:id="@+id/stress_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/sec_title"
+                android:name="com.adrianCzarnecki.anxietyApp.ui.secTitle.SecTitleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Paragraph 1 + image -->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <ImageView
+                    android:src="@drawable/effects"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:paddingLeft="17dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\t\tWhen working correctly and on a short-term basis, anxiety does not cause any long-term body complications. However, when anxiety is over-amplified or consistent on a long-term basis, bodily complications can arise."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cardiac System"/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 2 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThe circulatory system is one such affected system. Short-term problems include hyperventilation, which is commonly seen during anxiety and panic attacks. Hyperventilation causes the constriction of blood vessels, causing blood to travel more slowly through the body, and causes increased blood pressure."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 3 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tLikewise, anxiety is correlated with the release of adrenaline into the bloodstream, which leads to the dilation of blood vessels, however adrenaline in some cases can also lead to reduced blood-flow. For individuals predisposed to cardiac disease, such effects can trigger heart failures and other heart problems."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 4 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tAnxiety is associated with many heart disorders, including rapid heart rate (tachycardia), which can interfere with heart function and cause cardiac arrest. Likewise, chronic increased blood pressure is correlated with coronary disease, weakening of heart muscle, and heart failure. Finally, anxiety causes decreased heart rate variability, which can lead to a higher incidence of death after an acute heart attack."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 5 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tBecause of this mismatch, long-term stressers can result in chronic stress. Likewise, anxiety disorders can come unnecessary, misfired, or over-amplified anxiety triggers. This can give rise to many anxiety disorders such as PTSD, phobias, panic disorder, illness anxiety disorder (hypochondria), obsessive-compulsive Disorder (OCD), etc."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Respiratory System"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tLikewise, the respiratory system is another system affected by anxiety. When acting normally, the adrenaline pumped into one’s system will speed up breathing. "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tHowever, anxiety can lead to the individual hyperventilating. Hyperventilation is linked to further respiratory problems, including trouble breathing sensation, where the body feels that it is not getting enough oxygen. This causes the individual to hyperventilate with deeper breaths, further worsening their hyperventilation. This may lead to individuals developing panic attacks, because the more they hyperventilate, the worse the symptoms become."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tLikewise, hyperventilation can further lead to an inability for one to expand their chest or feel a need to yawn. The sensation of struggling to breathe is correlated with a feeling of needing to yawn but feeling that one cannot expand their chest for a full yawn. This can lead to further anxiety and the belief that something is wrong with one’s lungs, even though in reality the individual simply did not need the air."/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tSources used:"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\thttps://www.calmclinic.com/anxiety/circulation-problems\n\t\thttps://www.calmclinic.com/anxiety/symptoms/respiratory-problems\n\t\thttps://www.hopkinsmedicine.org/heart_vascular_institute/centers_excellence/womens_cardiovascular_health_center/patient_information/health_topics/anxiety_heart_disease.html"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

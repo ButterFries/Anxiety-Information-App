@@ -2,23 +2,21 @@
     <string name="app_name">AnxietyBeGone</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_about">About</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_improving">What Is Anxiety</string>
-    <string name="menu_helping">Helping a Friend</string>
-    <string name="menu_stress">Stress Management</string>
-    <string name="menu_effects">Symptoms</string>
-    <string name="menu_relax">Relaxation Techniques</string>
+    <string name="menu_improving">What is Anxiety</string>
+    <string name="menu_helping">Anxiety Around the World</string>
+    <string name="menu_stress">Effects on the Body</string>
+    <string name="menu_effects">Relation to Mental Health</string>
+    <string name="menu_relax">Influence of Awareness</string>
     <string name="menu_about">About</string>
 
     <string name="home_title">AnxietyBeGone</string>
-    <string name="helping_title">Helping a Friend</string>
-    <string name="improving_title">What Is Anxiety</string>
-    <string name="relaxation_title">Relaxation Techniques</string>
-    <string name="stress_title">Stress Management</string>
+    <string name="helping_title">Anxiety Around the World</string>
+    <string name="improving_title">What is Anxiety</string>
+    <string name="effects_title">Relation to Mental Health</string>
+    <string name="relax_title">Influence of Awareness</string>
+    <string name="stress_title">Effects on the Body</string>
     <string name="about_title">About</string>
 </resources>

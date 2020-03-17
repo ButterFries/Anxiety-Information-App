@@ -14,6 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Anxiety Around the World -->
             <fragment
                 android:id="@+id/sec_title"
                 android:name="com.adrianCzarnecki.anxietyApp.ui.secTitle.SecTitleFragment"
@@ -23,7 +24,28 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Paragraph 1 + image -->
+
+            <!-- Paragraph 1 -->
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tThe prevalence of anxiety and anxiety disorders has been shown to be dependant on a population’s culture. For instance, social anxiety disorders are shown to be related to the population’s culture; countries such as the US have a prevalence rate of 7.1%, while Taiwan has a prevalence rate of 0.4%. Asian countries, including South Korea, China, and Japan have very low social anxiety rates, at 0.6%, 0.2%, and 0.8% respectively."/>
+
+            </LinearLayout>
+
+            <!-- Paragraph 2 + image -->
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="10dp"
@@ -37,9 +59,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tHave a look at the ImageView API. There are several setImage* methods. Which one to use depends on the image you provide. If you have the image as resource Have a look at the ImageView API. There are several setImage* methods."/>
+                    android:text="\t\tCultural differences also play a part as to how social anxiety disorders manifest. Factors that influence social anxiety disorder include whether a culture is individualistic or collectivistic, social norms and embarrassment, shame, and cultural gender roles."/>
                 <ImageView
-                    android:src="@drawable/helping"
+                    android:src="@drawable/planet"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:scaleType="fitXY"
@@ -48,7 +70,7 @@
 
             </LinearLayout>
 
-            <!-- Paragraph 2 + image -->
+            <!-- Paragraph 3 -->
             <LinearLayout
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -64,7 +86,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+                    android:text="\t\tFor instance, Japan and Korea have a subset of social anxiety disorder (SAD) termed Taijin Kyofusho (TKS) which refers to the worry of being observed or offending other people. As opposed to SAD being focused on the fear of embarrassing oneself, those with TKS fear embarrassing others. Common fears of TKS include fear of blushing, fear of a deformed body, fear of one’s own glance, and fear of body odor. Likewise, individualistic cultures will display more SAD in terms of self-blame, while those in part of a collectivistic culture will instead experience more shame."/>
 
             </LinearLayout>
             <LinearLayout
@@ -82,7 +104,27 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+                    android:text="\t\tIn terms of treatment, there is no research evidence to support a difference in the response in treatment between cultures. However, research has indicated that at moderate-levels, first-generation Chinese individuals are less likely to seek treatment relative to other cultural backgrounds. Likewise, at low- and high-levels, all participants, despite cultural background, showed similar willingness for treatment."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\t\tSources used:"/>
+
 
             </LinearLayout>
             <LinearLayout
@@ -100,64 +142,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
+                    android:text="\t\thttps://www.verywellmind.com/cultural-social-anxiety-disorder-3024706\n\t\thttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075954/#S3title"/>
+
 
             </LinearLayout>
-            <LinearLayout
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right">
-
-                <TextView
-                    android:textColor="#000000"
-                    android:fontFamily="@font/lato_regular"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right">
-
-                <TextView
-                    android:textColor="#000000"
-                    android:fontFamily="@font/lato_regular"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
-
-            </LinearLayout><LinearLayout
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:paddingTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right">
-
-            <TextView
-                android:textColor="#000000"
-                android:fontFamily="@font/lato_regular"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="\t\tThis is another seperate textview. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here. I am testing to make the spacing accurate. I need random words here."/>
-
-        </LinearLayout>
-
-
 
         </LinearLayout>
 
